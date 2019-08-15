@@ -7,17 +7,20 @@
       <Money/>
       <Product/>
       <Life/>
+      <Footer/>
   </div>
 </template>
 
 <script>
 import Heador from '../public/header.vue';
+import Footer from '../public/footer.vue';
 import Slider from './hslider.vue';
 import Novice from './novice.vue';
 import Borrow from './borrow.vue';
 import Money from './money.vue';
 import Product from './product.vue';
 import Life from './life.vue';
+
 
   export default {
     components:{
@@ -27,7 +30,8 @@ import Life from './life.vue';
       Borrow,
       Money,
       Product,
-      Life
+      Life,
+      Footer
     }
   }
 </script>
