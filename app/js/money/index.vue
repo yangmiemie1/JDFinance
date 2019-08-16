@@ -4,6 +4,7 @@
     <Slider/>
     <Ada/>
     <Money/>
+    <Finance/>
     <Adb/>
     <Footer/>
     <Navbar/>
@@ -18,6 +19,7 @@ import Slider from './mslider.vue';
 import Ada from './ada.vue';
 import Money from './money.vue'
 import Adb from './adb.vue'
+import Finance from './finance.vue'
 
   export default {
     components:{
@@ -27,7 +29,8 @@ import Adb from './adb.vue'
       Navbar,
       Ada,
       Money,
-      Adb
+      Adb,
+      Finance
     }
   }
 </script>
