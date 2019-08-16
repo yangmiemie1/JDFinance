@@ -1,8 +1,8 @@
 <template>
-    <Panel :class="$style.panel">
+    <Panel title="导航条" :class="$style.panel">
         <ul :class="$style.content">
             <li>
-                <router-link :to="{name:'home'}">
+                <router-link :to="{ name:'home' }">
                     <img src="//img12.360buyimg.com/jrpmobile/jfs/t3451/188/644771475/2428/800d7cb7/580f2435Nbfaa8055.png?width=66&height=66" alt="">
                     <h4>首页</h4>
                 </router-link>
@@ -48,29 +48,32 @@ import Panel from '../core/panel.vue';
 @import '../../css/element.scss';
 .panel{
     @include panel;
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    margin: 0;
     >h4{
-        display:none;
+        display: none;
     }
     .content{
         @include flex(row);
-        justify-content:space-around;
-        height:100px;
-        li{
-            a{
-                text-decoration:none;
+        justify-content: space-around;
+        li {
+            text-align: center;
+            a {
+                text-decoration: none;
             }
-            img{
-                width:44px;
-                height:44px;
-                margin:12px auto 6px;
+            img {
+                width: 44px;
+                height: 44px;
+                display: inline-block;
+                margin: 12px auto 6px;
             }
-            h4{
-                font-size:22px;
-                color:#656565;
+            h4 {
+                font-size: 22px;
+                color: #656565;
             }
         }
     }

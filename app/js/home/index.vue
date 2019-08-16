@@ -8,12 +8,14 @@
       <Product/>
       <Life/>
       <Footer/>
+      <Navbar/>
   </div>
 </template>
 
 <script>
 import Heador from '../public/header.vue';
 import Footer from '../public/footer.vue';
+import Navbar from '../public/navbar.vue';
 import Slider from './hslider.vue';
 import Novice from './novice.vue';
 import Borrow from './borrow.vue';
@@ -31,7 +33,8 @@ import Life from './life.vue';
       Money,
       Product,
       Life,
-      Footer
+      Footer,
+      Navbar
     }
   }
 </script>
